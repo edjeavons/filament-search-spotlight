@@ -2,6 +2,7 @@
 
 namespace Wezlo\FilamentSearchSpotlight\Livewire;
 
+use Livewire\Attributes\Locked;
 use Livewire\Component;
 use Wezlo\FilamentSearchSpotlight\Categories\ActionsCategory;
 use Wezlo\FilamentSearchSpotlight\Categories\Category;
@@ -19,6 +20,7 @@ class SpotlightComponent extends Component
     public int $selectedIndex = 0;
 
     /** @var array<int, array<string, mixed>> */
+    #[Locked]
     public array $groups = [];
 
     /** @var array<int, array<string, mixed>> */
